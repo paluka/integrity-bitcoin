@@ -1,0 +1,14 @@
+{
+  "name": "integrity-bitcoin-backend",
+  "version": "0.1.0",
+  "description": "Backend of a web application that connects with the Bitcoin network to verify to integrity of documents and files",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bitcoin"
+  ],
+  "author": "Erik Paluka",
+  "license": "ISC"
+}
