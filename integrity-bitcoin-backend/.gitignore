@@ -1,6 +1,4 @@
-
-# Created by https://www.toptal.com/developers/gitignore/api/macos,node
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos,node
+.env
 
 ### macOS ###
 # General
@@ -141,5 +139,3 @@ dist
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
-
-# End of https://www.toptal.com/developers/gitignore/api/macos,node
