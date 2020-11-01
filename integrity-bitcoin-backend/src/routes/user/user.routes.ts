@@ -2,7 +2,7 @@ import express from 'express';
 
 const router = express.Router();
 
-router.get('/', (req, res, next) => {
+router.post('/login', (req, res, next) => {
   res.send('<p>Apple</p>');
 });
 

@@ -1,10 +1,11 @@
 import express from 'express';
 import dotenv from 'dotenv';
-import logger from 'morgan';
+import httpRequestLogger from 'morgan';
 import cookieParser from 'cookie-parser';
 import http from 'http';
 
-import userRouter from './routes/users/users.routes';
+import { logger } from './services/logger';
+import userRouter from './routes/user/user.routes';
 
 dotenv.config();
 
@@ -13,16 +14,15 @@ const app = express();
 
 app.set('port', port);
 
-app.use(logger('dev'));
+app.use(httpRequestLogger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-app.use('/users', userRouter);
+app.use('/user', userRouter);
 
 const server = http.createServer(app);
 
 server.listen(port, () => {
-  // tslint:disable-next-line:no-console
-  console.log(`server started at http://localhost:${port}`);
+  logger.info(`server started at http://localhost:${port}`);
 });
