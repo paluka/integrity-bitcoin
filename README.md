@@ -1,6 +1,6 @@
 ## integrity-bitcoin
 
-Web application that connects with the Bitcoin network to verify to integrity of documents and files.
+Web application that connects with the Bitcoin network to verify the integrity of documents and files.
 
 ### Technology
 
